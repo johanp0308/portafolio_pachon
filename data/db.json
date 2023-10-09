@@ -1,9 +1,95 @@
 {
-    "users":[
+    "user":[
         {
-            "name":"Johan Sebastian",
-            "description":"Web Developer",
-            "contact":""
+            "name":"Cristina",
+            "aboutme":"I am Cristina, i'm from Colombia",
+            "contacts":[
+                {"linkedin":"linkedin.com"},
+                {"email":"cris@gmail.com"},
+                {"phone":"320545784"}
+            ],
+            "skillsId":[1,2],
+            "habilitiesId":[1,2],
+            "languagesId":[4,3],
+            "statusId":1
+        }
+    ],
+    "skills":[
+        {
+            "id":1,
+            "name":"python",
+            "icon":"<i class='bx bxl-python'></i>"
+        },
+        {
+            "id":2,
+            "name": "JavaScript",
+            "icon": "<i class='bx bxl-javascript'></i>"
+        },
+        {
+            "id":3,
+            "name": "Java",
+            "icon": "<i class='bx bxl-java'></i>"
+        },
+        {
+            "id":4,
+            "name": "C++",
+            "icon": "<i class='bx bxl-c-plus-plus'></i>"
+        },
+        {
+            "id":5,
+            "name": "PHP",
+            "icon": "<i class='bx bxl-php'></i>"
+        },
+        {
+            "id":6,
+            "name":"Ruby",
+            "icon":"<i class='bx bxl-sketch' ></i>"
+        }
+    ],
+    "habilities":[
+        {
+            "id":1,
+            "name":"Communication"
+        },
+        {
+            "id":2,
+            "name":"Leadership"
+        },
+        {
+            "id":3,
+            "name":"Creativity"
+        },
+        {
+            "id":4,
+            "name":"Analyst"
+        },
+        {
+            "id":5,
+            "name":"Entrepreneur"
+        }
+    ],
+    "languages":[
+        {
+            "id":1,
+            "language":"english"
+        },
+        {
+            "id":2,
+            "language":"spanish"
+        }
+    ],
+    "statuses":[
+        {
+            "id":1,
+            "status":"desempleado"
+        },
+        {
+            "id":2,
+            "status":"trabajando"
+        },
+        {
+            "id":3,
+            "status":"desempleado"
         }
     ]
 }
