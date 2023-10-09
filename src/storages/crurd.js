@@ -19,7 +19,7 @@ export const getOne = async(endpoint,id) => {
 export const post = async (obj={},endpoint) => {
     config.method = 'POST';
     config.body = JSON.stringify(obj);
-    let res = await(await fetch(`${url}/${endpoint}`,)).json();
+    let res = await(await fetch(`${url}/${endpoint}`,config)).json();
     return res;
 }
 export const deleteOne = async (endpoint,id) => {
