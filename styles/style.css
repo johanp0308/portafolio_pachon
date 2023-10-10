@@ -578,12 +578,14 @@ main .btn-send:hover {
 	background: var(--dark-blue);
 }
 /* MAIN */
+
+/* MODAL PORTAFOLIO */
+
+#portafolio{
+	
+}
+
 /* CONTENT */
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
 	#content {

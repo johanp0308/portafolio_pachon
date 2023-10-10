@@ -4,8 +4,14 @@
             "name":"Cristina",
             "aboutme":"I am Cristina, i'm from Colombia",
             "contacts":[
-                {"linkedin":"linkedin.com"},
-                {"email":"cris@gmail.com"},
+                {
+                    "type":"linkedin",
+                    "email":"crista@"
+                },
+                {
+                    "type":"email",
+                    "email":"cris@gmail.com"
+                },
                 {"phone":"320545784"}
             ],
             "skillsId":[1,2],
@@ -90,6 +96,28 @@
         {
             "id":3,
             "status":"desempleado"
+        }
+    ],
+    "social":[
+        {
+            "name":"likedin",
+            "icon":"<i class='bx bxl-linkedin-square'></i>",
+            "color":"blue"
+        },
+        {
+            "name":"github",
+            "icon":"<i class='bx bxl-github' ></i>",
+            "color":"black"
+        },
+        {
+            "name":"email",
+            "icon":"<i class='bx bx-envelope' ></i>",
+            "color":"blue"
+        },
+        {
+            "name":"phone",
+            "icon":"<i class='bx bx-phone' ></i>",
+            "color":"green"
         }
     ]
 }
