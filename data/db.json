@@ -18,7 +18,71 @@
             "habilitiesId":[1,2],
             "languagesId":[4,3],
             "statusId":1
+        },
+        {
+      "id": 2,
+      "name": "Johan",
+      "aboutme": "I am Johan, i'm from Colombia",
+      "contacts": [
+        {
+          "linkedin": "Pachon.com"
+        },
+        {
+          "email": "PAchob@gmail.com"
+        },
+        {
+          "phone": "98465"
+        },
+        {
+          "github": "@johanp0308"
         }
+      ],
+      "skillsId": [
+        3,
+        2
+      ],
+      "habilitiesId": [
+        1,
+        2
+      ],
+      "languagesId": [
+        1,
+        2
+      ],
+      "statusId": 2
+    },
+    {
+      "name": "Jaider",
+      "aboutme": "I am Papucho",
+      "contacts": [
+        {
+          "linkedin": "jdiaer.com"
+        },
+        {
+          "email": "yadier@gmail.com"
+        },
+        {
+          "phone": "798165"
+        },
+        {
+          "github": "@jiader"
+        }
+      ],
+      "skillsId": [
+        1,
+        2
+      ],
+      "habilitiesId": [
+        1,
+        2
+      ],
+      "languagesId": [
+        1,
+        2
+      ],
+      "statusId": 3,
+      "id": 3
+    }
     ],
     "skills":[
         {
