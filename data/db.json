@@ -23,7 +23,14 @@
           {
             "company":"Panaderia",
             "position":"gerente",
+            "description":"Trabaje como panadero profesional, haciedno postres",
             "duration":"menos de 1 año"
+          },
+          {
+            "company":"Campuslands",
+            "position":"Desarrollador",
+            "description":"Trabaje desarrallando aplicaciones y soluciones",
+            "duration":"mayor a 1 año y menor a 5"
           }
         ],
         "skillsId":[1,2],
