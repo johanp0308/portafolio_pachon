@@ -39,6 +39,28 @@ export const putOneUser = async (obj,id) =>{
     return putOne(newEdit,enpointUser,id);
 }
 
+export const getRelationShipsUser = async (id) =>{
+    let data = await getOneUser(id);
+    let {skillsId:idSkil,habilitiesId:idhabili,languagesId:idlengua,statusId:idstatus,contacts:contactsId} = data;
+    
+    data.skillsId = await Promise.all(idSkil.map(async (id) => await getOne("skills",id)));
+
+    data.habilitiesId = await Promise.all(idhabili.map(async(id)=> await getOne("habilities",id)));
+
+    data.languagesId = await Promise.all(idlengua.map(async(id)=> await getOne("languages",id)));
+
+    data.statusId = await getOne("statuses",idstatus);
+
+    data.contacts =await Promise.all( contactsId.map(async(e)=>{
+        let {socialId:id} = e;
+        e.socialId = await getOne("social",id);
+        return e;
+    }))
+    return data; 
+}
+
+console.log(await getRelationShipsUser(1));
+
 // let ser = {
 //     name:"Jaider",
 //     aboutme:"I am Papucho",
