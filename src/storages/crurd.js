@@ -14,7 +14,7 @@ export const getAll = async (enpoint) => {
 }
 export const getOne = async(endpoint,id) => {
     let res = await (await fetch(`${url}/${endpoint}/${id}`)).json();
-    return res;
+    return (Object.keys(res)) ? res : {status:404,message:"There is nothing"};
 }
 export const post = async (obj={},endpoint) => {
     config.method = 'POST';
