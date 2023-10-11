@@ -1,9 +1,3 @@
-.contain-dialog{
-    width: 80%;
-    background-color: #d5d5d5;
-    margin: 0 auto;
-    text-align: center;
-}
 
 #portafolio{
     background-color: #000000a1 ;
@@ -54,14 +48,6 @@
     font-size: 1.3rem;
 }
 
-#skills{
-
-}
-
-#habilities ul.list-modal{
-    
-}
-
 .profile-img{
     border-radius: 30px; 
     height: auto;
@@ -72,6 +58,44 @@
     font-size: 3rem;
 }
 
-@media screen and (max-width:768px) {
+.contain-dialog{
+    width: 80%;
+    background-color: #d5d5d5;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (min-width:826px) {
+    .experence-cards{
+        margin: 1rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
     
+    .lenguages{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width:1412px) {
+    .contain-dialog{
+        width: 70%;
+        font-size: 17px;
+        display:flex;
+        flex-direction: row;
+    }
+
+    .lenguages ul li{
+        font-size: 6rem;
+    }
+    
+    #portafolio-sidebar{
+        width: 20%;
+    }
+
+    #portafolio-contmain{
+        width: 80%;
+    }
 }
