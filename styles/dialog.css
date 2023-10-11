@@ -1,29 +1,45 @@
+.contain-dialog{
+    width: 80%;
+    background-color: #d5d5d5;
+    margin: 0 auto;
+    text-align: center;
+}
 
 #portafolio{
+    background-color: #000000a1 ;
     display: flex;
     flex-direction: column;
     position: relative;
     font-size: .1rem;
     height: 100vh; 
+    width: 100vw;
     margin: auto;
+}   
+
+#portafolio div, #portafolio div section{
+    margin-top: 1rem;
 }
 
 #portafolio-sidebar{
     padding: .3rem;
     font-size: 1.3rem;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
 }
 
 #portafolio-contmain{
     padding: .4rem;
     font-size: 1rem;
-    background-color: beige;
+    /* background-color: beige; */
 }
 
 #portafolio #portafolio-sidebar #image-perfil{
+    display: flex;
     width: 100%;
-    
+    justify-content: center;
+}
+#portafolio #portafolio-sidebar #image-perfil img{
+    width: 80%;
 }
 
 #portafolio .btn-close{
@@ -38,8 +54,12 @@
     font-size: 1.3rem;
 }
 
-#habilities ul.list-modal{
+#skills{
 
+}
+
+#habilities ul.list-modal{
+    
 }
 
 .profile-img{
@@ -48,3 +68,10 @@
     width: 100%;
 }
 
+.icon-languages{
+    font-size: 3rem;
+}
+
+@media screen and (max-width:768px) {
+    
+}
