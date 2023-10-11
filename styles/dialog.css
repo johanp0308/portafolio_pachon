@@ -1,0 +1,43 @@
+
+#portafolio{
+    position: relative;
+    font-size: .1rem;
+    height: 100vh; 
+    margin: auto;
+
+}
+
+#portafolio-sidebar{
+    padding: .3rem;
+    font-size: 1.3rem;
+    background-color: aqua;
+    width: 100%;
+}
+
+#portafolio #portafolio-sidebar #image-perfil{
+    width: 100%;
+    
+}
+
+#portafolio .btn-close{
+    font-size: 1.8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#about-me{
+    padding: .7rem;
+    font-size: 1.3rem;
+}
+
+#habilities ul.list-modal > li{
+    list-style: circle;
+}
+
+.profile-img{
+    border-radius: 30px; 
+    height: auto;
+    width: 100%;
+}
+
