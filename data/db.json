@@ -1,151 +1,215 @@
 {
-    "users":[
-      {
-        "id":1,
-        "img":"https://s36496.pcdn.co/wp-content/uploads/2017/11/9-si-foto-cv.png",
-        "name":"Cristina",
-        "aboutme":"I am Cristina, i'm from Colombia",
-        "contacts":[
-            {
-              "socialId":4,
-              "data":"32054687"
-            },
-            {
-              "socialId":1,
-              "data":"cristes@linked"
-            },
-            {
-              "socialId":3,
-              "data":"cristes@gma.com"
-            }
-        ],
-        "experences":[
-          {
-            "company":"Panaderia",
-            "position":"gerente",
-            "description":"Trabaje como panadero profesional, haciedno postres",
-            "duration":"menos de 1 año"
-          },
-          {
-            "company":"Campuslands",
-            "position":"Desarrollador",
-            "description":"Trabaje desarrallando aplicaciones y soluciones",
-            "duration":"mayor a 1 año y menor a 5"
-          }
-        ],
-        "skillsId":[1,2],
-        "habilitiesId":[1,2],
-        "languagesId":[1,2],
-        "statusId":1
-      }
-    ],
-    "skills":[
+  "users": [
+    {
+      "id": 1,
+      "img": "https://s36496.pcdn.co/wp-content/uploads/2017/11/9-si-foto-cv.png",
+      "name": "Cristina",
+      "aboutme": "I am Cristina, i'm from Colombia",
+      "contacts": [
         {
-            "id":1,
-            "name":"python",
-            "icon":"<i class='bx bxl-python'></i>"
+          "socialId": 4,
+          "data": "32054687"
         },
         {
-            "id":2,
-            "name": "JavaScript",
-            "icon": "<i class='bx bxl-javascript'></i>"
+          "socialId": 1,
+          "data": "cristes@linked"
         },
         {
-            "id":3,
-            "name": "Java",
-            "icon": "<i class='bx bxl-java'></i>"
-        },
-        {
-            "id":4,
-            "name": "C++",
-            "icon": "<i class='bx bxl-c-plus-plus'></i>"
-        },
-        {
-            "id":5,
-            "name": "PHP",
-            "icon": "<i class='bx bxl-php'></i>"
-        },
-        {
-            "id":6,
-            "name":"Ruby",
-            "icon":"<i class='bx bxl-sketch' ></i>"
+          "socialId": 3,
+          "data": "cristes@gma.com"
         }
-    ],
-    "habilities":[
+      ],
+      "experences": [
         {
-            "id":1,
-            "name":"Communication",
-            "icon":"<i class='bx bx-chat'></i>"
+          "company": "Panaderia",
+          "position": "gerente",
+          "description": "Trabaje como panadero profesional, haciedno postres",
+          "duration": "menos de 1 año"
         },
         {
-            "id":2,
-            "name":"Leadership",
-            "icon":"<i class='bx bx-user-voice' ></i>"
-        },
-        {
-            "id":3,
-            "name":"Creativity",
-            "icon":"<i class='bx bx-brain' ></i>"
-        },
-        {
-            "id":4,
-            "name":"Analyst",
-            "icon":"<i class='bx bx-data' ></i>"
-        },
-        {
-            "id":5,
-            "name":"Entrepreneur",
-            "icon":"<i class='bx bx-store-alt' ></i>"
+          "company": "Campuslands",
+          "position": "Desarrollador",
+          "description": "Trabaje desarrallando aplicaciones y soluciones",
+          "duration": "mayor a 1 año y menor a 5"
         }
-    ],
-    "languages":[
+      ],
+      "skillsId": [
+        1,
+        2
+      ],
+      "habilitiesId": [
+        1,
+        2
+      ],
+      "languagesId": [
+        1,
+        2
+      ],
+      "statusId": 1
+    },
+    {
+      "name": "Johan",
+      "img": "https://www.looper.com/img/gallery/nobody-review-breaking-dad/l-intro-1616757057.jpg",
+      "skillsId": [
+        "6"
+      ],
+      "habilitiesId": [
+        "1",
+        "2"
+      ],
+      "languagesId": [
+        "1"
+      ],
+      "statusId": 2,
+      "contacts": [
         {
-            "id":1,
-            "language":"english"
+          "socialId": 1,
+          "data": "qewqwe"
         },
         {
-            "id":2,
-            "language":"spanish"
+          "socialId": 2,
+          "data": "adsqwd"
+        },
+        {
+          "socialId": 3,
+          "data": "keiner-pachon@hotmail.com"
+        },
+        {
+          "socialId": 4,
+          "data": "3202818201"
         }
-    ],
-    "statuses":[
+      ],
+      "experences": [
         {
-            "id":1,
-            "status":"desempleado"
+          "company": "Hol",
+          "position": "panadero",
+          "description": "qweqwe",
+          "duration": "mayor a 5 años"
         },
         {
-            "id":2,
-            "status":"trabajando"
+          "company": "",
+          "position": "",
+          "description": "",
+          "duration": "menos de 1 año"
         },
         {
-            "id":3,
-            "status":"desempleado"
+          "company": "",
+          "position": "",
+          "description": "",
+          "duration": "menos de 1 año"
         }
-    ],
-    "social":[
-        {
-            "id":1,
-            "name":"linkedin",
-            "icon":"<i class='bx bxl-linkedin-square'></i>",
-            "color":"blue"
-        },
-        {
-            "id":2,
-            "name":"github",
-            "icon":"<i class='bx bxl-github' ></i>",
-            "color":"black"
-        },
-        {
-            "id":3,
-            "name":"email",
-            "icon":"<i class='bx bx-envelope' ></i>",
-            "color":"blue"
-        },
-        {
-            "id":4,
-            "name":"phone",
-            "icon":"<i class='bx bx-phone' ></i>",
-            "color":"green"
-        }
-    ]
+      ],
+      "aboutme": "qwqwe",
+      "id": 2
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "python",
+      "icon": "<i class='bx bxl-python'></i>"
+    },
+    {
+      "id": 2,
+      "name": "JavaScript",
+      "icon": "<i class='bx bxl-javascript'></i>"
+    },
+    {
+      "id": 3,
+      "name": "Java",
+      "icon": "<i class='bx bxl-java'></i>"
+    },
+    {
+      "id": 4,
+      "name": "C++",
+      "icon": "<i class='bx bxl-c-plus-plus'></i>"
+    },
+    {
+      "id": 5,
+      "name": "PHP",
+      "icon": "<i class='bx bxl-php'></i>"
+    },
+    {
+      "id": 6,
+      "name": "Ruby",
+      "icon": "<i class='bx bxl-sketch' ></i>"
+    }
+  ],
+  "habilities": [
+    {
+      "id": 1,
+      "name": "Communication",
+      "icon": "<i class='bx bx-chat'></i>"
+    },
+    {
+      "id": 2,
+      "name": "Leadership",
+      "icon": "<i class='bx bx-user-voice' ></i>"
+    },
+    {
+      "id": 3,
+      "name": "Creativity",
+      "icon": "<i class='bx bx-brain' ></i>"
+    },
+    {
+      "id": 4,
+      "name": "Analyst",
+      "icon": "<i class='bx bx-data' ></i>"
+    },
+    {
+      "id": 5,
+      "name": "Entrepreneur",
+      "icon": "<i class='bx bx-store-alt' ></i>"
+    }
+  ],
+  "languages": [
+    {
+      "id": 1,
+      "language": "english"
+    },
+    {
+      "id": 2,
+      "language": "spanish"
+    }
+  ],
+  "statuses": [
+    {
+      "id": 1,
+      "status": "desempleado"
+    },
+    {
+      "id": 2,
+      "status": "trabajando"
+    },
+    {
+      "id": 3,
+      "status": "desempleado"
+    }
+  ],
+  "social": [
+    {
+      "id": 1,
+      "name": "linkedin",
+      "icon": "<i class='bx bxl-linkedin-square'></i>",
+      "color": "blue"
+    },
+    {
+      "id": 2,
+      "name": "github",
+      "icon": "<i class='bx bxl-github' ></i>",
+      "color": "black"
+    },
+    {
+      "id": 3,
+      "name": "email",
+      "icon": "<i class='bx bx-envelope' ></i>",
+      "color": "blue"
+    },
+    {
+      "id": 4,
+      "name": "phone",
+      "icon": "<i class='bx bx-phone' ></i>",
+      "color": "green"
+    }
+  ]
 }
