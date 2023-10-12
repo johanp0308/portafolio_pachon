@@ -74,23 +74,28 @@
     "habilities":[
         {
             "id":1,
-            "name":"Communication"
+            "name":"Communication",
+            "icon":"<i class='bx bx-chat'></i>"
         },
         {
             "id":2,
-            "name":"Leadership"
+            "name":"Leadership",
+            "icon":"<i class='bx bx-user-voice' ></i>"
         },
         {
             "id":3,
-            "name":"Creativity"
+            "name":"Creativity",
+            "icon":"<i class='bx bx-brain' ></i>"
         },
         {
             "id":4,
-            "name":"Analyst"
+            "name":"Analyst",
+            "icon":"<i class='bx bx-data' ></i>"
         },
         {
             "id":5,
-            "name":"Entrepreneur"
+            "name":"Entrepreneur",
+            "icon":"<i class='bx bx-store-alt' ></i>"
         }
     ],
     "languages":[
@@ -120,7 +125,7 @@
     "social":[
         {
             "id":1,
-            "name":"likedin",
+            "name":"linkedin",
             "icon":"<i class='bx bxl-linkedin-square'></i>",
             "color":"blue"
         },
