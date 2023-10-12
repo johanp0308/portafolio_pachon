@@ -59,8 +59,6 @@ export const getRelationShipsUser = async (id) =>{
     return data; 
 }
 
-console.log(await getRelationShipsUser(1));
-
 // let ser = {
 //     name:"Jaider",
 //     aboutme:"I am Papucho",
