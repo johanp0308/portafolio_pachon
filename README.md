@@ -1,9 +1,6 @@
 
 # Portafolio Web Project
-
-In this repository, I will save what I learned requests to the mockAPI where I make the basic queries of any data storage system.
-
-
+Portfolio, to save and create resumes
 
 ## JSON-server installation
 
@@ -58,3 +55,5 @@ My form can accept several values which are added to the database. The form does
 
 ![](./imgsReadme/Screenshot%20from%202023-10-12%2009-47-34.png)
 ![](./imgsReadme/Screenshot%20from%202023-10-12%2009-48-04.png)
+
+
