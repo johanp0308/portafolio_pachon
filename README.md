@@ -3,106 +3,7 @@
 
 In this repository, I will save what I learned requests to the mockAPI where I make the basic queries of any data storage system.
 
-##
 
-
-### API Reference
-
-#### GET all items
-
-**Method** : `GET`
-
-**URL** : `http://localhost:5500/registros`
-
-**Storage** : `src/modules/dataCRUD.js`
-
-**Module** : `update` 
-
-**Querys** : `(tabla)`
-
-**Autho Required** : `false`
-
-```javascript
-{
-  "records":[
-    {
-      "id": "2",
-      "cash":"egreso",
-      "value":20000
-    },
-    ...
-  ]
-}
-```
-
-#### POST items
-
-**Method**: `POST`
-
-**URL** : `http://localhost:5500/registros`
-
-**Storage** : `src/modules/dataCRUD.js`
-
-**Module** : `createData` 
-
-**Querys** : `(data)`
-
-**Auth Required** : `False`
-
-```javascript
-//Enviado
-  data = {
-      cash: "egreso",
-      value: "20000"
-  }
-```
-
-#### Delete Item
-
-**Method**: `DELETE`
-
-**URL** : `http://localhost:5500/registros/:id`
-
-**Storage** : `src/modules/dataCRUD.js`
-
-**Module** : `deleteData` 
-
-**Querys** : `(id)`
-
-**Auth Required** : `False`
-
-```javascript
-//Enviado
-{
-  "id":"1"
-  "cash":"ingreso",
-  "value":20000
-}
-```
-
-
-#### PUT
-
-**Method**: `PUT`
-
-**URL** : `http://localhost:5500/registros/:id`
-
-**Storage** : `src/modules/dataCRUD.js`
-
-**Module** : `editData` 
-
-**Querys** : `(id)`
-
-**Auth Required** : `false`
-
-```javascript
-//Enviado
-{
-  "id":"1"
-  "cash":"ingreso",
-  "value":20000
-}
-```
 
 ## JSON-server installation
 
@@ -146,3 +47,14 @@ To start the json-server, it will run on port 5500, so we run the following comm
 npm run dev
 ```
 
+## How to use
+
+### Form
+My form can accept several values which are added to the database. The form does not have identification, therefore it will add repeated information if it is made.
+
+![](./imgsReadme/form-1.png)
+![](./imgsReadme/form-2.png)
+![](./imgsReadme/form-3.png)
+
+![](./imgsReadme/Screenshot%20from%202023-10-12%2009-47-34.png)
+![](./imgsReadme/Screenshot%20from%202023-10-12%2009-48-04.png)
