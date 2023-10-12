@@ -1,6 +1,9 @@
 import { getRelationShipsUser } from "../storages/users.js";
 import { getAll } from "../storages/crurd.js";
 import { endpoints } from "../config/config.js";
+import { getAllUsers } from "../storages/users.js";
+
+const imgDefa = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
 
 const capitalizeEachWord = (text) => {
   const words = text.split(" ");
@@ -12,6 +15,23 @@ const capitalize = (word) => {
   return word[0].toUpperCase() + word.slice(1);
 }
 
+export const loadedTable = async (content) =>{
+  let users = await getAllUsers();
+  console.log(users)
+  users.forEach( (e) =>{
+    let card = `
+    <div class="card" style="width: 18rem;">
+      <img src="${e.img!=="" ? e.img : imgDefa}" class="card-img-top" alt="${e.name}">
+      <div class="card-body">
+      <h5 class="card-title">${e.name}</h5>
+      <p class="card-text">${e.aboutme}</p>
+      <a id="${e.id}" class="btn btn-primary card-portafo">Show</a>
+      </div>
+    </div>
+    `
+    content.insertAdjacentHTML("beforeend",card);
+  })
+}
 
 export const getListCheck = (elements) =>{
   let list = [];
@@ -23,10 +43,9 @@ export const getListCheck = (elements) =>{
   return list;
 }
 
-
-export const addPortDialog = async (dialog) => {
+export const addPortDialog = async (dialog,id) => {
   dialog.innerhtml = "";
-  let data = await getRelationShipsUser(1);
+  let data = await getRelationShipsUser(id);
   let {
     name,
     img,
@@ -38,8 +57,86 @@ export const addPortDialog = async (dialog) => {
     languagesId,
     statusId,
   } = data;
-
-  dialog()
+  let html = `
+  <div class="contain-dialog">
+			<div id="portafolio-sidebar">
+				<div>
+					<button type="button" class="btn-close" id="dialog-close"></button>
+				</div>
+				<section id="image-perfil">
+					<img src="${(img)?img:imgDefa}" alt="foto" class="profile-img">
+				</section>
+	
+				<section id="contact-me">
+					<ul>
+						${contacts.map( e =>{
+              return `
+              <li>${e.socialId.icon+(e.data!==""?e.data:"I don't have")}</li>
+              `
+            }).join("")}
+					</ul>
+				</section>
+	
+				<section id="about-me">
+					<h3 class="title">About-me</h3>
+					<p class="text">${aboutme}</p>
+				</section>
+				<section id="habilities">
+					<ul class="list-modal">
+          ${habilitiesId.map( e =>{
+            return `
+            <li>${e.icon+e.name}</li>
+            `
+          }).join("")}
+					</ul>
+				</section>
+			</div>
+			<div id="portafolio-contmain">
+				<section id="name title">
+					<h1>${name}</h1>
+          <h5>${capitalize(statusId.status)}</h5>
+				</section>
+				<section class="experence">
+					<h3>Experence</h3>
+          ${experences.map((e)=>{
+            if(e.company!==""){
+              return `
+              <div class="experence-cards">
+						    <div class="card">
+							  <h5 class="card-header">${capitalize(e.company)}</h5>
+							  <div class="card-body">
+							  <h5 class="card-title">${capitalize(e.position)}</h5>
+                <p class="card-text">${e.description}<br>
+                  <b>Duration:</b> ${e.duration}
+                  </p>
+							  </div>
+						  </div>`
+            }
+            else{
+              return ""
+            }
+          }).join("")}
+				</section>
+				<section class="skills">
+					<h3>Programming of Languages</h3>
+					<div class="icon-languages">
+						${e.skillsId.map(e=>{
+              return `${e.icon}`
+            }).join("")}
+					</div>
+				</section>
+				<section class="lenguagues">
+					<h3>Languages ​​I speak</h3>
+					<ul>
+						${languagesId.map(e=>{
+              return `<li>${languagesId.la}</li>`
+            }).join("")}
+					</u>
+				</section>
+			</div>
+		</div>
+  `
+  return html;
 };
 
 export const loadedForm = async () => {
@@ -242,3 +339,4 @@ export const loadedForm = async () => {
   // console.log(statuseshtml);
   return form;
 }
+

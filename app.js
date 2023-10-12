@@ -1,5 +1,5 @@
 /* Imports */
-import {addPortDialog, loadedForm, getListCheck} from './src/util/domAdd.js'
+import {addPortDialog, loadedForm, getListCheck,loadedTable} from './src/util/domAdd.js'
 import { postUser } from './src/storages/users.js';
 /* Const */
 const d = document;
@@ -13,12 +13,13 @@ const title = d.querySelector(".title");
 
 const initForm = async () =>{
     content.innerHTML = "";
-    console.log()
     content.insertAdjacentHTML("beforeend", await loadedForm())
 }
 
-const initTable = () =>{
+const initTable = async () =>{
     content.innerHTML = "";
+    content.style.cssText="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-evenly";
+    loadedTable(content)
 }
 
 
@@ -83,7 +84,7 @@ d.addEventListener("click",(e)=>{
         btn_form.classList.remove("active");
         btn_cvs.classList.add("active");
         title.textContent="Resume"
-        initTable()
+        initTable();
 
     }
     if(e.target.matches("#sidebar .btn-Form")){
@@ -91,6 +92,10 @@ d.addEventListener("click",(e)=>{
         btn_cvs.classList.remove("active");
         title.textContent="Form"
         initForm();
+    }
+
+    if(e.target.matches("")){
+
     }
 });
 
