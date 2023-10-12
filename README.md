@@ -49,9 +49,16 @@ npm run dev
 ### Form
 My form can accept several values which are added to the database. The form does not have identification, therefore it will add repeated information if it is made.
 
+The application has methods and functionalities that allow you to add the other items if inconvenient.
+
+
 ![](./imgsReadme/form-1.png)
 ![](./imgsReadme/form-2.png)
 ![](./imgsReadme/form-3.png)
+
+Here each item only has the functionality of showing each item
+
+Here each item only has the functionality of displaying detailed information about the CV in a modal.
 
 ![](./imgsReadme/Screenshot%20from%202023-10-12%2009-47-34.png)
 ![](./imgsReadme/Screenshot%20from%202023-10-12%2009-48-04.png)
