@@ -3,19 +3,22 @@ export const valiEstructUser = (obj) => {
     if(obj.constructor.name !== "Object" || Object.keys(obj)==0) return {status:400,message:"This object is incorrect, input again"};
     let {name=null,
         aboutme=null,
-        contacts={},
+        img=null,
+        experences=[],
+        contacts=[],
         skillsId=[],
         habilitiesId=[],
         languagesId=[],
         statusId=null
     } = obj;
     if(!(contacts.constructor.name !== "Object") && Object.keys(contacts)>0) return {status:400,message:`This ${contacts} is not incorrect`}
-    
-    if(typeof name !== "string") return {status:400,message:`this attribute is incorrect: ${name}`};
-    if(typeof aboutme !== "string") return {status:400,message:`this attribute is incorrect: ${aboutme}`};
-    if(habilitiesId.constructor.name !== "Array") return {status:400,message:`this attribute is incorrect: ${habilitiesId}`};
-    if(skillsId.constructor.name!== "Array") return {status:400,message:`this attribute is incorrect: ${skillsId}`};
-    if(languagesId.constructor.name !== "Array") return {status:400,message:`this attribute is incorrect: ${languagesId}`};
+    if(typeof img !== "string") return {status:400,message:`this attribute img is incorrect: ${img}`};
+    if(typeof name !== "string") return {status:400,message:`this attribute name is incorrect: ${name}`};
+    if(typeof aboutme !== "string") return {status:400,message:`this attribute aboutme is incorrect: ${aboutme}`};
+    if(experences.constructor.name !== "Array") return {status:400,message:`this attribute experences is incorrect: ${experences}`};
+    if(habilitiesId.constructor.name !== "Array") return {status:400,message:`this attribute habilitiesId is incorrect: ${habilitiesId}`};
+    if(skillsId.constructor.name!== "Array") return {status:400,message:`this attribute skillsId is incorrect: ${skillsId}`};
+    if(languagesId.constructor.name !== "Array") return {status:400,message:`this attribute languagesId is incorrect: ${languagesId}`};
     if(typeof statusId !== "number") return {status:400,message:`This attribute statusId is incorrect: ${statusId}`}
     return obj;
 }
