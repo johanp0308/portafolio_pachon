@@ -2,6 +2,8 @@
 # Portafolio Web Project
 Portfolio, to save and create resumes
 
+To test my code you must install special dependencies for it to work
+
 ## JSON-server installation
 
 To install json-server in the project, we must have node, if we do not have it we can use the following tool to install Node and install npm.
@@ -19,14 +21,14 @@ nvm --version
 Now with nvm installed, we proceed on a command line to install node and npm:
 
 ```shell
-nvm install 18.16.1
+nvm install 18.18.1
 ```
 
 Then we verify that everything has been installed and we also verify the list of versions.
 
 ```shell
 node -v
-#18.16.1
+#18.18.1
 
 npm -v
 # 9.6.7
@@ -60,6 +62,7 @@ Here each item only has the functionality of showing each item
 
 Here each item only has the functionality of displaying detailed information about the CV in a modal.
 
+Currently there is an error when displaying the languages on the CV
 ![](./imgsReadme/Screenshot%20from%202023-10-12%2009-47-34.png)
 ![](./imgsReadme/Screenshot%20from%202023-10-12%2009-48-04.png)
 
