@@ -43,8 +43,7 @@ export const getListCheck = (elements) =>{
   return list;
 }
 
-export const addPortDialog = async (dialog,id) => {
-  dialog.innerhtml = "";
+export const addPortDialog = async (id) => {
   let data = await getRelationShipsUser(id);
   let {
     name,
@@ -120,7 +119,7 @@ export const addPortDialog = async (dialog,id) => {
 				<section class="skills">
 					<h3>Programming of Languages</h3>
 					<div class="icon-languages">
-						${e.skillsId.map(e=>{
+						${skillsId.map(e=>{
               return `${e.icon}`
             }).join("")}
 					</div>
@@ -129,7 +128,7 @@ export const addPortDialog = async (dialog,id) => {
 					<h3>Languages ​​I speak</h3>
 					<ul>
 						${languagesId.map(e=>{
-              return `<li>${languagesId.la}</li>`
+              return `<li>${languagesId.language}</li>`
             }).join("")}
 					</u>
 				</section>

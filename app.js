@@ -74,10 +74,12 @@ d.addEventListener("submit",(e)=>{
 
 })
 
-d.addEventListener("click",(e)=>{
+d.addEventListener("click", async (e)=>{
     if(e.target.matches("button#dialog-close.btn-close")){
+        dialog.innerHTML=""
         console.log(e.target)
         dialog.close();
+        dialog.style.display = "none";
     }
     if(e.target.matches("#sidebar .btn-Cvs")){
         console.log(e.target)
@@ -94,8 +96,11 @@ d.addEventListener("click",(e)=>{
         initForm();
     }
 
-    if(e.target.matches("")){
-
+    if(e.target.matches("a.card-portafo")){
+        console.log(e.target.id);
+        dialog.insertAdjacentHTML("beforeend",await addPortDialog(e.target.id)) ;
+        dialog.style.display = "block";
+        dialog.showModal()
     }
 });
 
